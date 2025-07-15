@@ -1,0 +1,341 @@
+/* Make the header take the full width */
+.Header {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%; /* Ensures full width */
+}
+
+/* Ensure header container spans full width */
+.headerContainer {
+  width: 100%;
+  padding: 20px 0px; /* Adjust padding as needed */
+}
+
+/* Center the items inside the header container */
+.headerList {
+  display: flex;
+  justify-content: center; /* Center items in the header */
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
+/*   
+  .headerList {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+   */
+/* Styling for Header List Items */
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Hover Effect for List Items */
+.headerListItem:hover {
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+/* Active state for List Items */
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* Ensure the attraction button stays white */
+.headerListItem.attractionButton {
+  background-color: white;
+  color: #003580; /* Set the text color to match the header */
+}
+
+/* Active state for the attraction button - keeps it white */
+.headerListItem.attractionButton.active {
+  background-color: white;
+  color: #003580;
+  border: none;
+}
+
+/* Hover Effect for Attraction Button */
+.headerListItem.attractionButton:hover {
+  background-color: white;
+  color: #003580;
+  border: 1px solid white;
+}
+
+/* Description Style in Header */
+.headerDesc {
+  margin: 20px 0px;
+}
+
+/* Button Styling */
+.Header .headerBtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Search Box Styling */
+.headerSearch {
+  height: 30px;
+  background-color: white;
+  border: 3px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+/* Search Icon Style */
+.headerIcon {
+  color: gray;
+}
+
+/* Text Style inside Search Box */
+.headerSearchText {
+  color: gray;
+  cursor: pointer;
+}
+
+/* Search Item Layout */
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Input Field Style in Search */
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+/* Date Positioning */
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+/* Options Dropdown Styling */
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+/* Option Item Styling */
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Option Counter Layout */
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+/* Option Counter Button Style */
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* Disabled State for Option Counter Button */
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
+/* Overall container for the page
+.attractions-container {
+  padding: 50px;
+  background-color: #f8f9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+} */
+
+/* Title for Attractions page */
+h2 {
+  font-size: 2.7em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Hotel list section */
+.hotels-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.hotel {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotel:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* List of attractions */
+.attractions-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.attraction-item {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+  text-align: center;
+}
+
+.attraction-item:hover {
+  transform: translateY(-5px);
+}
+
+.attraction-item img {
+  width: 100%;
+  max-width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.attraction-item h5 {
+  font-size: 1.2em;
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+/* Hotel details (Airports, food, weather) */
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.details h4 {
+  font-size: 1.5em;
+  color: #3a3a3a;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 10px 0;
+  text-align: center;
+}
+
+ul li {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 1.5em;
+  color: #f4a261;
+}
+
+/* Selected attraction details */
+.attraction-details {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.attraction-details img {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.attraction-details h5 {
+  font-size: 2em;
+  color: #333;
+  font-weight: 700;
+}
+
+.attraction-details p {
+  font-size: 1.2em;
+  color: #757575;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #aaa;
+  font-size: 1em;
+}

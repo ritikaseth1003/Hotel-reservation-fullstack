@@ -1,0 +1,70 @@
+.loginContainer {
+  width: 400px;
+  margin: 100px auto;
+  padding: 25px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #003580;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: inset 3px 3px 5px #d9d9d9, inset -3px -3px 5px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: inset 2px 2px 4px #c0c0c0, inset -2px -2px 4px #ffffff;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(145deg, #0066cc, #0052a3);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px #004080, -5px -5px 10px #0080ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loginBtn:hover {
+  background: linear-gradient(145deg, #0052a3, #0066cc);
+  /* box-shadow: 1px 2px 8px #003d66, -5px -5px 15px #0099ff; */
+}
+
+.loginBtn:active {
+  background: #003d66;
+  box-shadow: inset 2px 2px 5px #002840, inset -2px -2px 5px #004d80;
+  transform: scale(0.98);
+}

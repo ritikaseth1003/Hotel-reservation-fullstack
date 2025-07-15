@@ -1,0 +1,135 @@
+/* Main container styling */
+.userProfileContainer {
+    padding: 50px;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Profile page title */
+  .userProfileTitle {
+    font-size: 2.5rem;
+    color: #34495e;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Profile card container */
+  .userProfileCard {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for profile card */
+  .userProfileCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Profile image styling */
+  .userProfilePicture {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3498db;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for profile image */
+  .profileImage:hover {
+    transform: scale(1.1);
+  }
+  
+  /* User info styling */
+  .userProfileInfo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .profileLabel {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 8px;
+  }
+  
+  .profileInput,
+  .profileTextarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+  }
+  
+  /* Placeholder text styling */
+  .profileInput::placeholder,
+  .profileTextarea::placeholder {
+    color: #bbb;
+  }
+  
+  /* Input hover effect */
+  .profileInput:hover,
+  .profileTextarea:hover {
+    border-color: #3498db;
+  }
+  
+  /* Textarea styling */
+  .profileTextarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* Button styling */
+  .profileButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  /* Button hover effect */
+  .profileButton:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Small screen responsiveness */
+  @media (max-width: 768px) {
+    .userProfileContainer {
+      padding: 30px;
+    }
+  
+    .userProfileCard {
+      padding: 30px;
+      width: 90%;
+    }
+  
+    .profileButton {
+      padding: 12px 25px;
+    }
+  }
+  
