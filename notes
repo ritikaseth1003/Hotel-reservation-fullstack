@@ -1,0 +1,7 @@
+#JWT
+#COOKIES
+#AUTHORISATION AND AUTHENTICATION.
+-->Whenever we make update hotel api req, It first goes to the JSON WEBTOKEN to identify if the given user is an admin or not.
+He ll be able to update it only if he is an admin else permission denied.
+
+#Setting the tokens into our cookies.
